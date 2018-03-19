@@ -1,10 +1,14 @@
+#!/usr/bin/env python3
+
 import re
 import os
 from glob import glob
 import csv
 
 # change dir
-os.chdir('/home/olga/Documents/DataProcessOto/data')
+dirname = os.path.dirname(__file__)
+datadir = os.path.join(dirname,'data')
+os.chdir(datadir)
 
 filenames = glob('*.txt')
 
